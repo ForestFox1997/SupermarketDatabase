@@ -1,4 +1,4 @@
-/*    ==Scripting Parameters==
+п»ї/*    ==Scripting Parameters==
 
     Source Server Version : SQL Server 2019 (15.0.4261)
     Source Database Engine Edition : Microsoft SQL Server Enterprise Edition
@@ -145,8 +145,8 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
--- Выбрать имена продуктов и имена соответствующих им категорий
--- Выводить имя продукта, даже если у него нет категории
+-- Р’С‹Р±СЂР°С‚СЊ РёРјРµРЅР° РїСЂРѕРґСѓРєС‚РѕРІ Рё РёРјРµРЅР° СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… РёРј РєР°С‚РµРіРѕСЂРёР№
+-- Р’С‹РІРѕРґРёС‚СЊ РёРјСЏ РїСЂРѕРґСѓРєС‚Р°, РґР°Р¶Рµ РµСЃР»Рё Сѓ РЅРµРіРѕ РЅРµС‚ РєР°С‚РµРіРѕСЂРёРё
 
 CREATE VIEW AllProductsWithCategories AS
     SELECT Products.Name AS ProductName, Categories.Name AS CategoryName
@@ -156,32 +156,32 @@ CREATE VIEW AllProductsWithCategories AS
 GO
 SET IDENTITY_INSERT [dbo].[Categories] ON 
 
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (1, N'Батончики', 1)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (2, N'Шоколад', 1)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (3, N'Печенье', 1)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (4, N'Чай', 1)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (5, N'Выпечка', 1)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (6, N'Хлеб', 1)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (7, N'Кухонные принадлежности', 0)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (8, N'Посуда', 0)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (9, N'Товары для дома и дачи', 0)
-INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (10, N'Одежда', 0)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (1, N'Р‘Р°С‚РѕРЅС‡РёРєРё', 1)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (2, N'РЁРѕРєРѕР»Р°Рґ', 1)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (3, N'РџРµС‡РµРЅСЊРµ', 1)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (4, N'Р§Р°Р№', 1)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (5, N'Р’С‹РїРµС‡РєР°', 1)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (6, N'РҐР»РµР±', 1)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (7, N'РљСѓС…РѕРЅРЅС‹Рµ РїСЂРёРЅР°РґР»РµР¶РЅРѕСЃС‚Рё', 0)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (8, N'РџРѕСЃСѓРґР°', 0)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (9, N'РўРѕРІР°СЂС‹ РґР»СЏ РґРѕРјР° Рё РґР°С‡Рё', 0)
+INSERT [dbo].[Categories] ([Id], [Name], [IsFood]) VALUES (10, N'РћРґРµР¶РґР°', 0)
 SET IDENTITY_INSERT [dbo].[Categories] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Products] ON 
 
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (1, N'Батончик Snikers', 50.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (2, N'Печенье Oreo', 150.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (3, N'Шоколад Бабаевский', 80.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (4, N'Зефир Воздушный поцелуй', 180.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (5, N'Пирожное Orion Choco-Pie', 150.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (6, N'Шоколад Ritter Sport', 120.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (7, N'Хлеб Деревенский', 30.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (8, N'Чай в пакетиках черный Greenfield Golden Ceylon', 150.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (9, N'Чай в пакетиках черный Ahmad Tea Classic Black Tea', 120.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (10, N'Ножницы кухонные', 200.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (11, N'Ножницы канцелярские', 200.0000)
-INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (12, N'Книга "Как получить жирный offer"', 1500.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (1, N'Р‘Р°С‚РѕРЅС‡РёРє Snikers', 50.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (2, N'РџРµС‡РµРЅСЊРµ Oreo', 150.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (3, N'РЁРѕРєРѕР»Р°Рґ Р‘Р°Р±Р°РµРІСЃРєРёР№', 80.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (4, N'Р—РµС„РёСЂ Р’РѕР·РґСѓС€РЅС‹Р№ РїРѕС†РµР»СѓР№', 180.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (5, N'РџРёСЂРѕР¶РЅРѕРµ Orion Choco-Pie', 150.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (6, N'РЁРѕРєРѕР»Р°Рґ Ritter Sport', 120.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (7, N'РҐР»РµР± Р”РµСЂРµРІРµРЅСЃРєРёР№', 30.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (8, N'Р§Р°Р№ РІ РїР°РєРµС‚РёРєР°С… С‡РµСЂРЅС‹Р№ Greenfield Golden Ceylon', 150.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (9, N'Р§Р°Р№ РІ РїР°РєРµС‚РёРєР°С… С‡РµСЂРЅС‹Р№ Ahmad Tea Classic Black Tea', 120.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (10, N'РќРѕР¶РЅРёС†С‹ РєСѓС…РѕРЅРЅС‹Рµ', 200.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (11, N'РќРѕР¶РЅРёС†С‹ РєР°РЅС†РµР»СЏСЂСЃРєРёРµ', 200.0000)
+INSERT [dbo].[Products] ([Id], [Name], [Price]) VALUES (12, N'РљРЅРёРіР° "РљР°Рє РїРѕР»СѓС‡РёС‚СЊ Р¶РёСЂРЅС‹Р№ offer"', 1500.0000)
 SET IDENTITY_INSERT [dbo].[Products] OFF
 GO
 SET IDENTITY_INSERT [dbo].[ProductsByCategories] ON 
